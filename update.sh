@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 echo "欢迎使用一键搭建 脚本"
 echo "即将搭建的是Sannian-Cloud-Radar 05.02A "
-echo "交流群：697156614，感谢使用"
+echo "QQ：769559533，有偿使用 免费更新"
 echo "准备开始安装"
 read -p "请输入群号后开始安装："
 echo "请输入 你服务器的 内网ip" 
@@ -12,7 +12,7 @@ wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 
-echo "ss搭建成，请记住连接信息."
+echo "ss搭建成，请记住连接信息qq769559533."
 read -p "记住了吗？任意键继续." 
 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
@@ -36,4 +36,4 @@ npm i -g pino
 npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
-echo "搭建完成，加群：697156614 获取最新动态"
+echo "搭建完成，QQ：769559533 加qq了解最新更新动态"
